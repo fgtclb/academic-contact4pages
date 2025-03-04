@@ -6,9 +6,9 @@
 		"GPL-2.0-or-later"
 	],
 	"require": {
-		"php": "^7.4 || ^8.0 || ^8.1 || ^8.2 || ^8.3",
-		"typo3/cms-core": "^11.5 || ^12.4",
-		"fgtclb/academic-persons": "^0.2.0 || ^1.1.0 || 0.*.*@dev || 1.*.*@dev || dev-*@dev"
+		"php": "^8.1 || ^8.2 || ^8.3",
+		"typo3/cms-core": "^12.4 || ^13.4",
+		"fgtclb/academic-persons": "^2.0 || 2.*.*@dev"
 	},
 	"autoload": {
 		"psr-4": {
