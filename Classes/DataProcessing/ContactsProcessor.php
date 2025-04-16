@@ -30,7 +30,7 @@ class ContactsProcessor implements DataProcessorInterface
         }
 
         $contactRepository = GeneralUtility::makeInstance(ContactRepository::class);
-        $contacts = $contactRepository->findByPid($currentRecordUid);
+        $contacts = $contactRepository->findByPid((int)$currentRecordUid);
 
         $processedData['contacts'] = $contacts;
 
