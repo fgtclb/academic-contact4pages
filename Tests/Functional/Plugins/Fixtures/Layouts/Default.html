@@ -3,10 +3,11 @@
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 >
 <f:comment>
-    A site package layout for the contacts element that leaves the header to the element's
-    own list template, which renders it through the header partial instead.
+    The content element layout of a site package that renders no header: the element
+    templates of such a site render the header themselves. The id is the one the layout of
+    EXT:fluid_styled_content gives the frame, so a test finds the element either way.
 </f:comment>
-<div class="frame-without-header">
+<div id="c{data.uid}" class="frame-without-header">
     <f:render section="Main" optional="true" />
 </div>
 </html>
